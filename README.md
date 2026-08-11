@@ -4,7 +4,7 @@ Public metadata-only projection. Adapters translate external systems through Nec
 
 | Adapter | Category | Status | Repository | Visibility |
 |---|---|---|---|---|
-| Claw Royale | game | canonical | [claw-royale-adapter](https://github.com/AnarchI-Technologies/claw-royale-adapter) | private target |
+| Claw Royale | game | canonical | [claw-royale-adapter](https://github.com/AnarchI-Technologies/claw-royale-adapter) | private |
 | Universal Event Stream | event | canonical | [cerberus-event-stream-adapter](https://github.com/AnarchI-Technologies/cerberus-event-stream-adapter) | private |
 | OpenAPI Generator | API | built | [cerberus-openapi-adapter-generator](https://github.com/AnarchI-Technologies/cerberus-openapi-adapter-generator) | private |
 | MCP | API | built | [cerberus-mcp-adapter](https://github.com/AnarchI-Technologies/cerberus-mcp-adapter) | private |
