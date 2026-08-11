@@ -5,13 +5,30 @@ projection_of: validated-repository-anarchi-manifests
 members:
   - {id: claw-royale, repo: AnarchI-Technologies/claw-royale-adapter, category: game, status: canonical}
   - {id: event-stream, repo: AnarchI-Technologies/cerberus-event-stream-adapter, category: event, status: canonical}
-  - {id: openapi-generator, repo: AnarchI-Technologies/cerberus-openapi-adapter-generator, category: api, status: built}
-  - {id: mcp, repo: AnarchI-Technologies/cerberus-mcp-adapter, category: api, status: built}
-  - {id: graphql, repo: AnarchI-Technologies/cerberus-graphql-adapter, category: api, status: built}
-  - {id: process-container, repo: AnarchI-Technologies/cerberus-process-container-adapter, category: runtime, status: built}
-  - {id: sql-read-model, repo: AnarchI-Technologies/cerberus-sql-read-model-adapter, category: data, status: built}
-  - {id: evm, repo: AnarchI-Technologies/cerberus-evm-adapter, category: chain, status: built}
-  - {id: starknet, repo: AnarchI-Technologies/cerberus-starknet-adapter, category: chain, status: built}
-  - {id: sui-object, repo: AnarchI-Technologies/cerberus-sui-object-adapter, category: chain, status: built}
-  - {id: solana-program, repo: AnarchI-Technologies/cerberus-solana-program-adapter, category: chain, status: built}
-  - {id: pettingzoo-gymnasium, repo: AnarchI-Technologies/cerberus-pettingzoo-gymnasium-adapter, category: evaluation, status: built}
+  - {id: openapi-generator, repo: AnarchI-Technologies/cerberus-openapi-adapter-generator, category: api, status: canonical-built}
+  - {id: mcp, repo: AnarchI-Technologies/cerberus-mcp-adapter, category: api, status: canonical-built}
+  - {id: graphql, repo: AnarchI-Technologies/cerberus-graphql-adapter, category: api, status: canonical-built}
+  - {id: process-container, repo: AnarchI-Technologies/cerberus-process-container-adapter, category: runtime, status: canonical-built}
+  - {id: sql-read-model, repo: AnarchI-Technologies/cerberus-sql-read-model-adapter, category: data, status: canonical-built}
+  - {id: evm, repo: AnarchI-Technologies/cerberus-evm-adapter, category: chain, status: canonical-built}
+  - {id: starknet, repo: AnarchI-Technologies/cerberus-starknet-adapter, category: chain, status: canonical-built}
+  - {id: sui-object, repo: AnarchI-Technologies/cerberus-sui-object-adapter, category: chain, status: canonical-built}
+  - {id: solana-program, repo: AnarchI-Technologies/cerberus-solana-program-adapter, category: chain, status: canonical-built}
+  - {id: pettingzoo-gymnasium, repo: AnarchI-Technologies/cerberus-pettingzoo-gymnasium-adapter, category: evaluation, status: canonical-built}
+metadata_contract:
+  required_fields: [id, repo, category, status]
+  projected_fields: [purpose, implementation_visibility, version, contracts_consumed, contracts_provided, capability_families, strategy_scope, compatible_core_language, dependencies, consumers, authority_boundary, forbidden_authority, retirement_status, audit_guidance]
+  source: validated repository anarchi.yaml
+claw_royale:
+  purpose: Claw Royale protocol translation and bounded action submission
+  implementation_visibility: private
+  version: manifest-derived
+  contracts_consumed: [capability-envelope.v1, neck-translation.v1, strategy-consumer.v1]
+  capability_families: [match.join, movement, combat, interaction, observation]
+  strategy_scope: [claw_royale.game]
+  compatible_core_language: v1
+  dependencies: [cerberus-adapter-sdk@v0.2.1, cerberus-orchestrator#neck, hellion-strategist]
+  authority_boundary: claw-royale-protocol-translation-only
+  forbidden_authority: [Core orchestration, global strategy consumption, direct Switchboard subscription]
+  retirement_status: active
+  audit_guidance: verify private manifest hash and pinned SDK commit through Kiln
