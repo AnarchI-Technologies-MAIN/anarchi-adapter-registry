@@ -1,6 +1,7 @@
 schema_version: 1
 family: adapters
-canonical_source: true
+canonical_source: false
+projection_of: validated-repository-anarchi-manifests
 members:
   - {id: claw-royale, repo: AnarchI-Technologies/claw-royale-adapter, category: game, status: canonical}
   - {id: event-stream, repo: AnarchI-Technologies/cerberus-event-stream-adapter, category: event, status: canonical}

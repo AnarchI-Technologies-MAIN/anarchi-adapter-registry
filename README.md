@@ -1,6 +1,6 @@
 # AnarchI Adapter Registry
 
-Public metadata-only index. Adapters translate external systems through Neck; they do not grant Core domain knowledge.
+Public metadata-only projection. Adapters translate external systems through Neck; they do not grant Core domain knowledge. Canonical truth remains in validated repository manifests; Kiln compiles this view.
 
 | Adapter | Category | Status | Repository | Visibility |
 |---|---|---|---|---|
