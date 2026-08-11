@@ -1,0 +1,4 @@
+schema_version: 1
+identity: {organization: AnarchI, component: Adapter Registry, canonical_name: anarchi-adapter-registry, responsibility: public adapter index, authority: metadata-only}
+repository: {owner: AnarchI-Technologies, name: anarchi-adapter-registry, visibility: public, status: canonical}
+boundaries: {owns: [adapter classification and links], forbids: [adapter implementation, secrets, execution]}

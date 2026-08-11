@@ -1,0 +1,16 @@
+schema_version: 1
+family: adapters
+canonical_source: true
+members:
+  - {id: claw-royale, repo: AnarchI-Technologies/claw-royale-adapter, category: game, status: canonical}
+  - {id: event-stream, repo: AnarchI-Technologies/cerberus-event-stream-adapter, category: event, status: canonical}
+  - {id: openapi-generator, repo: AnarchI-Technologies/cerberus-openapi-adapter-generator, category: api, status: built}
+  - {id: mcp, repo: AnarchI-Technologies/cerberus-mcp-adapter, category: api, status: built}
+  - {id: graphql, repo: AnarchI-Technologies/cerberus-graphql-adapter, category: api, status: built}
+  - {id: process-container, repo: AnarchI-Technologies/cerberus-process-container-adapter, category: runtime, status: built}
+  - {id: sql-read-model, repo: AnarchI-Technologies/cerberus-sql-read-model-adapter, category: data, status: built}
+  - {id: evm, repo: AnarchI-Technologies/cerberus-evm-adapter, category: chain, status: built}
+  - {id: starknet, repo: AnarchI-Technologies/cerberus-starknet-adapter, category: chain, status: built}
+  - {id: sui-object, repo: AnarchI-Technologies/cerberus-sui-object-adapter, category: chain, status: built}
+  - {id: solana-program, repo: AnarchI-Technologies/cerberus-solana-program-adapter, category: chain, status: built}
+  - {id: pettingzoo-gymnasium, repo: AnarchI-Technologies/cerberus-pettingzoo-gymnasium-adapter, category: evaluation, status: built}
